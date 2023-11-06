@@ -29,6 +29,7 @@ const AddStudent = ({ params }) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
   const handleSave = () => {
+    setShow(false);
     const newStudent = {
       ...values,
       id: v4(),
@@ -38,11 +39,15 @@ const AddStudent = ({ params }) => {
       ...db,
       peoples: [...db.peoples, newStudent],
     };
-    request(store.month, "PUT", JSON.stringify(newStudents)).then(() => {
-      dispatch(addStudent(newStudent));
-      setShow(false);
-      toast.success("Yangi o'quvchi qo'shildi!");
-    });
+    request(store.month, "PUT", JSON.stringify(newStudents))
+      .then(() => {
+        dispatch(addStudent(newStudent));
+
+        toast.success("Yangi o'quvchi qo'shildi!");
+      })
+      .catch((err) => {
+        toast.error("O'quvchi qo'shilmadi!");
+      });
   };
   useEffect(() => {
     request(store.month).then((res) => {
