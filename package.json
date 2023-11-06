@@ -2,11 +2,11 @@
   "name": "boshqaruv",
   "version": "0.1.0",
   "private": true,
-  "main": "api/server.js",
+  
   "scripts": {
-    "dev": "concurrently \"next dev\" \"node api/server.js\"",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next dev",
     "lint": "next lint"
   },
   "dependencies": {
