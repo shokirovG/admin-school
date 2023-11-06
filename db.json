@@ -1,0 +1,78 @@
+{
+  "sentabr": {
+    "peoples": [
+      {
+        "id": "9d4440b4-f0ee-4fb6-912c-bec78c55a5cd",
+        "active": true
+      },
+      {
+        "id": "eb99106d-d528-445e-aa02-28b3f81bdec9",
+        "active": true
+      },
+      {
+        "chegirma": "0",
+        "chegirmaFoiz": "0",
+        "tolov": 1361,
+        "kurs": "front-end",
+        "guruh": "front-13",
+        "id": "7fd6651b-8f35-4d54-9b22-e874285d521f",
+        "active": true,
+        "tolovSanasi": "2023/11/6",
+        "index": 4
+      }
+    ],
+    "dangerPeoples": [
+      {
+        "id": "123123",
+        "name": "asdsadsadsad",
+        "lastName": "asdsadsadasd",
+        "yosh": "26/10/2002",
+        "maktab": "5-maktab",
+        "maktabDars": "abetlik",
+        "kursgaKelganVaqti": "05/02/2022",
+        "tel": "+998941234567",
+        "manzil": "payshanba, Do'stlik MFY 21-uy",
+        "kurs": "savodxonlik",
+        "tolov": "1890",
+        "chegirma": "bor",
+        "chegirmaFoiz": "5",
+        "oqituvchisi": "Farrux mallim",
+        "active": true,
+        "guruh": "front-11",
+        "tolovSanasi": "2023/11/5",
+        "index": 1
+      },
+      {
+        "id": "123123",
+        "name": "Asilbek123",
+        "lastName": "Muhammadiyev",
+        "yosh": "26/10/2002",
+        "maktab": "5-maktab",
+        "maktabDars": "abetlik",
+        "kursgaKelganVaqti": "05/02/2022",
+        "tel": "+998941234567",
+        "manzil": "payshanba, Do'stlik MFY 21-uy",
+        "kurs": "savodxonlik",
+        "tolov": "1890",
+        "chegirma": "bor",
+        "chegirmaFoiz": "5",
+        "oqituvchisi": "Farrux mallim",
+        "active": true,
+        "guruh": "front-11",
+        "tolovSanasi": "2023/11/5",
+        "index": 1
+      },
+      {
+        "id": "85a493f9-278a-4416-b690-fb041b054cb2",
+        "active": true
+      },
+      {
+        "id": "b1ce4b49-36e4-46ca-8290-b39d1c179bbc",
+        "active": true
+      }
+    ]
+  },
+  "oktabr": {},
+  "noyabr": {},
+  "dekabr": {}
+}
