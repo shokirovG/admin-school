@@ -164,7 +164,7 @@ const StudentListItem = ({
             <td>{guruh}</td>
 
             <td>
-              {numberTrim(qolganTolov) + " so'm"} <br /> {tolovSanasi}
+              {numberTrim(tolov) + " so'm"} <br /> {tolovSanasi}
             </td>
             <td>{numberTrim(kursNarxi)} so'm</td>
             <td>{numberTrim(qilishiKerakTolov)} so'm</td>

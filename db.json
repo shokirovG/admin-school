@@ -72,7 +72,22 @@
       }
     ]
   },
-  "oktabr": {},
-  "noyabr": {},
-  "dekabr": {}
+  "oktabr": {
+    "peoples": [
+
+    ],
+    "dangerPeoples": []
+  },
+  "noyabr": {
+    "peoples": [
+
+    ],
+    "dangerPeoples": []
+  },
+  "dekabr": {
+    "peoples": [
+
+    ],
+    "dangerPeoples": []
+  }
 }
