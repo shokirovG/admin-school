@@ -112,10 +112,7 @@ const StudentWarningItem = ({
 
             <th>Ismi</th>
             <th>Familiyasi</th>
-            <th>yoshi</th>
-            <th>maktab</th>
-            <th>maktabDars</th>
-            <th>o'qituvchisi</th>
+
             <th>kurs</th>
             <th>guruh</th>
             <th>qilgan to'lovi</th>
@@ -124,10 +121,6 @@ const StudentWarningItem = ({
             <th>qolgan to'lov</th>
 
             <th>chegirma(Foiz)</th>
-            <th>tel</th>
-
-            <th>manzil</th>
-            <th>kursgaKelganVaqti</th>
           </tr>
         </thead>
         <tbody>
@@ -136,10 +129,7 @@ const StudentWarningItem = ({
 
             <td>{name}</td>
             <td>{lastName}</td>
-            <td>{yosh}</td>
-            <td>{maktab}</td>
-            <td>{maktabDars}</td>
-            <td>{oqituvchisi}</td>
+
             <td>{kurs}</td>
             <td>{guruh}</td>
 
@@ -153,10 +143,6 @@ const StudentWarningItem = ({
             </td>
 
             <td>{chegirmaFoiz}</td>
-            <td>{tel}</td>
-
-            <td>{manzil}</td>
-            <td>{kursgaKelganVaqti}</td>
           </tr>
         </tbody>
       </table>
