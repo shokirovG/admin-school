@@ -141,7 +141,7 @@ const StudentWarningItem = ({
             <td className={qolganTolov === 0 ? "bg-success" : "bg-danger"}>
               {numberTrim(qolganTolov)} so'm
             </td>
-
+            
             <td>{chegirmaFoiz}</td>
           </tr>
         </tbody>

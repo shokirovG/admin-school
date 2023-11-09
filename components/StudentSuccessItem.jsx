@@ -82,8 +82,8 @@ const StudentSuccessItem = ({
       break;
     }
     default: {
-      kursNarxi = 0;
-      qilishiKerakTolov = 0;
+      kursNarxi = "sdsad";
+      qilishiKerakTolov = "asdasd";
       break;
     }
   }
@@ -105,16 +105,56 @@ const StudentSuccessItem = ({
     });
     currentCount = currentDb.length;
     return currentDb.reduce((s, item) => {
-      return s + item.tolov;
+      return s + Number(item.tolov);
     }, 0);
   };
   todayPrice();
-  const totalPrice = () => {
-    return store.studentsSuccess.reduce((s, item) => {
-      return s + item.tolov;
-    }, 0);
-  };
-  totalPrice();
+  const totalPrice = store.studentsSuccess.reduce((s, item) => {
+    switch (item.kurs) {
+      case "animatsiya": {
+        kursNarxi = 299000;
+        qilishiKerakTolov = ((100 - chegirmaFoiz) / 100) * 299000;
+        qolganTolov = ((100 - chegirmaFoiz) / 100) * 299000 - tolov;
+        break;
+      }
+      case "front-end": {
+        kursNarxi = 299000;
+        qilishiKerakTolov = ((100 - chegirmaFoiz) / 100) * 299000;
+        qolganTolov = ((100 - chegirmaFoiz) / 100) * 299000 - tolov;
+        break;
+      }
+      case "savodxonlik": {
+        kursNarxi = 199000;
+        qilishiKerakTolov = ((100 - chegirmaFoiz) / 100) * 199000;
+        qolganTolov = ((100 - chegirmaFoiz) / 100) * 199000 - tolov;
+        break;
+      }
+      case "inglizTili": {
+        kursNarxi = 199000;
+        qilishiKerakTolov = ((100 - chegirmaFoiz) / 100) * 199000;
+        qolganTolov = ((100 - chegirmaFoiz) / 100) * 199000 - tolov;
+        break;
+      }
+      case "python": {
+        kursNarxi = 149000;
+        qilishiKerakTolov = ((100 - chegirmaFoiz) / 100) * 149000;
+        qolganTolov = ((100 - chegirmaFoiz) / 100) * 149000 - tolov;
+        break;
+      }
+      default: {
+        kursNarxi = "asds";
+        qilishiKerakTolov = "dsa";
+        break;
+      }
+    }
+    return s + Number(item.tolov);
+  }, 0);
+  // const totalPrice = () => {
+  //   return store.studentsSuccess.reduce((s, item) => {
+  //     return s + item.tolov;
+  //   }, 0);
+  // };
+  // totalPrice();
 
   return (
     <div className="success__item">
@@ -125,7 +165,7 @@ const StudentSuccessItem = ({
         </h5>
         <h5 className="text-success">
           Umumiy to'lov: ({store.studentsSuccess.length} kishi){" "}
-          {numberTrim(totalPrice())} so'm
+          {numberTrim(totalPrice)} so'm
         </h5>
       </div>
       <table className="table child-table">
